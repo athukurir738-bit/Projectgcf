@@ -1,0 +1,350 @@
+*{
+margin:0%;
+padding:0%;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+body{
+background:#f4f4f4;
+}
+
+/* HEADER */
+
+header{
+background:#2e7d32;
+color:white;
+text-align:center;
+padding:20px;
+animation: fadeIn 2s;
+}
+
+/* NAVBAR */
+
+nav{
+background:#1b5e20;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+padding:15px 20px;
+text-decoration:none;
+transition:0.4s;
+}
+
+nav a:hover{
+background:#4caf50;
+}
+
+/* HERO SECTION */
+
+.hero1{
+
+ background-position: center; 
+/* justify-content:center;
+align-items:center; */
+text-align: center;
+color:rgb(14, 14, 24);
+font-size:40px;
+font-weight:bold;
+animation: slideDown 1s;
+}
+.hero{
+background-image: url(https://images.openai.com/static-rsc-3/rDVAan-cuj0FMMK8kc3uIRW2XQZ7-JFELiwsgshuXpCNOIaXGZogxmSgUd3f1OWPi-qb_1lnAzc0_svYlPCXte_yzUkXaWF0N5Hs1zCtWMU?purpose=inline); 
+background-size: cover;
+height:400px;
+
+}
+body{
+font-family: Arial;
+margin:0;
+background:#f4f4f4;
+}
+
+.title{
+text-align:center;
+padding:30px;
+color:green;
+}
+
+.container1{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:20px;
+}
+
+.box{
+background:white;
+width:250px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+transition:transform 1s ease-in-out;
+cursor:pointer;
+}
+
+.box h2{
+color:green;
+margin-bottom:10px;
+}
+
+.box:hover{
+transform: rotateY(360deg);
+background:#e8ffe8;
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* CONTENT */
+
+.container{
+width:85%;
+margin:auto;
+padding:40px 0;
+}
+
+/* FLEXBOX CARDS */
+
+.cards{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:white;
+padding:10px;
+width:280px;
+height: 140px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+transition:1s;
+
+}
+
+.card:hover{
+transform:rotateY(360deg);
+background-color: #4caf50;
+}
+
+.title{
+text-align:center;
+margin:30px;
+color:green;
+animation:fadeIn 2s ease;
+}
+
+/* GRID layout */
+
+.container2{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:40px;
+}
+
+/* crop boxes */
+
+.box1{
+background:white;
+padding:20px;
+width: 250px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+transition:0.4s;
+animation:slideUp 1s ease;
+}
+
+/* hover transition */
+
+.box1:hover{
+transform:scale(1.08);
+background:#5ac85a;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.box1 h2{
+color:green;
+margin-bottom:10px;
+}
+
+@keyframes slideUp{
+
+from{
+transform:translateY(50px);
+opacity:0;
+}
+
+to{
+transform:translateY(0);
+opacity:1;
+}
+
+}
+
+/* title animation */
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+}
+
+to{
+opacity:1;
+}
+
+}
+
+/* FORM */
+
+form{
+display:flex;
+flex-direction:column;
+
+gap:15px;
+max-width:500px;
+}
+.div2{ 
+    background-color: rgb(193, 227, 227);
+    width: 100%;
+    height: 462px;
+   
+} 
+
+input,textarea{
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:10px;
+background:#2e7d32;
+color:white;
+border:none;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#1b5e20;
+}
+
+/* FOOTER */
+
+  .footer{
+background-color: black;
+color:white;
+text-align:center;
+padding:5px;
+
+height: 80px; 
+
+
+}  
+
+/* ANIMATIONS */
+
+@keyframes fadeIn{
+from{opacity:0}
+to{opacity:1}
+}
+
+@keyframes slideDown{
+from{
+transform:translateY(-100px);
+opacity:0;
+}
+to{
+transform:translateY(0);
+opacity:1;
+}
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width:900px){
+
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+.hero{
+font-size:28px;
+text-align:center;
+}
+
+}
+
+@media(max-width:500px){
+
+nav{
+flex-direction:column;
+}
+
+nav a{
+text-align:center;
+border-top:1px solid rgba(255,255,255,0.2);
+}
+
+}
+.footer1{
+
+color:white;
+padding:40px 0 0 0;
+}
+
+.footer-container{
+width:100%;
+margin:auto;
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:30px;
+ background-color: #171b17; 
+}
+
+.footer-box{
+flex:1;
+min-width:220px;
+}
+
+.footer-box h3{
+margin-bottom:15px;
+color:#a5d6a7;
+}
+
+.footer-box ul{
+list-style:none;
+}
+
+.footer-box ul li{
+margin-bottom:10px;
+background-color: #212421;
+}
+
+.footer-box ul li a{
+color:rgb(204, 219, 207);
+text-decoration:none;
+transition:0.3s;
+}
+
+.footer-box ul li a:hover{
+color:yellow;
+padding-left:5px;
+}
+
+ .footer-bottom{ 
+ 
+text-align:center;
+margin-top:0px;
+padding:20px;
+background:#141a15;
+}
